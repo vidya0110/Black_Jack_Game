@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.game-area {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card {
+  width: 70px;
+  height: 100px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: deal 0.4s ease;
+}
+
+@keyframes deal {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ff9800;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ffc107;
+}
